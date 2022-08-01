@@ -42,6 +42,7 @@ namespace SiteBlocker
 
         private void AllowButton_Click(object sender, EventArgs e)
         {
+            Blocker.WriteCleanHosts();
             NotifyIcon.ShowBalloonTip(3, "Sites Allowed", "Sites are now accessible.", ToolTipIcon.Info);
         }
 
